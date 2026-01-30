@@ -1,6 +1,6 @@
 #include "dll.h"
 
-void insertDNode(dnode *&head, int index, int data)
+void insertDNode(dnode *&head, int index, int data) //this function adds a numerical value into a chosen index. 
 {
     dnode* newNode = new dnode;
     newNode->data = data;
@@ -39,7 +39,7 @@ void insertDNode(dnode *&head, int index, int data)
     }
 }
 
-void deleteDNode(dnode *&head, int index)
+void deleteDNode(dnode *&head, int index) //this deletes a datapoint from teh index
 {
     if(head == nullptr)
     {

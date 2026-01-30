@@ -106,7 +106,7 @@ void displayList(node *head)
     return nullptr;
 }
 
-void reverseList(node *&head)
+void reverseList(node *&head) //this takes the list and reverses the order of the index. 
 {
     node* prev = nullptr;
     node* current = head;

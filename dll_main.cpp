@@ -1,9 +1,11 @@
 #include "dll.h"
 #include <iostream>
 
+//list of functions
+
 void displayDList(dnode *head) 
 {
-    dnode* walker = head;
+    dnode* walker = head; // walker = pointer to the head of list
     while(walker != nullptr)
     {
         cout << walker->data << " ";
@@ -12,12 +14,13 @@ void displayDList(dnode *head)
     cout << endl;
 }
 
-int main()
+int main() // main function
 {
     dnode *head = nullptr;
     int choice, data, index;
     
-    do {
+    do { // a do while loop to run the menu
+        
         cout << endl;
         cout << "=== DOUBLY LINKED LIST TEST (Task 3) ===" << endl;
         cout << "1. Insert a new node" << endl;
